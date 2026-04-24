@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Software | RS IntelliEdge™ — Fraud & AML Platform</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#0075b7',
+                            600: '#005a8c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-[#0075b7]/20 selection:text-[#004b75]">
+
+    <!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        
+        <a href="#" class="flex items-center gap-2.5">
+            <img src="./images/main_logo.png" alt="RS IntelliEdge Logo" class="h-8 w-auto flex-shrink-0" />
+            
+            </a>
+        
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#developers" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Developers</a>
+            <a href="#who" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Who we serve</a>
+            <a href="#components" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Components</a>
+            <a href="#insights" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Insights</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#0075b7] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#005c8f] transition-colors">Book a demo</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section with Background Image -->
+    <header class="relative overflow-hidden py-16 lg:py-24 bg-slate-900">
+        <div class="absolute inset-0 opacity-40">
+            <img src="./images/ban.jpg" alt="Hero Background" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl animate-fade-in-up opacity-0">
+                <span class="inline-flex items-center rounded-full border border-[#008bda]/20 bg-[#008bda]/10 px-3 py-1 text-xs font-medium text-[#35fff3] mb-6">
+                    <iconify-icon icon="solar:shield-check-linear" class="mr-1.5 text-[#fffff]"></iconify-icon>
+                    RS IntelliEdge™ — Fraud & AML platform
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white mb-6 leading-[1.1]">
+                    The premier unified network for real-time fraud interdiction
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 max-w-xl">
+                    Real-time fraud interdiction and AML prevention powered by AI, shared intelligence, and sub-100ms decisioning.
+                    Protecting 300M+ transactions daily across every payment rail.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#0075b7] px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-[#005c8f] transition-colors">
+                        Book a demo
+                    </a>
+                    <a href="#" class="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 transition-colors">
+                        Request sandbox access
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Highlighted Stats Section -->
+     <div class="relative z-20 max-w-7xl mx-auto px-6 -mt-16 mb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Stat 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/40 transition-all hover:shadow-2xl">
+                <div class="text-4xl lg:text-5xl font-semibold tracking-tighter text-brand-500 flex items-center mb-3">
+                    <span class="text-3xl mr-1 font-medium opacity-50">></span>
+                    <span class="counter" data-target="80">0</span>
+                    <span class="text-3xl ml-1 font-medium opacity-50">%</span>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Fraud detection rate</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/40 transition-all hover:shadow-2xl">
+                <div class="text-4xl lg:text-5xl font-semibold tracking-tighter text-brand-500 flex items-center mb-3">
+                    <span class="text-3xl mr-1 font-medium opacity-50"><</span>
+                    <span class="counter" data-target="100">0</span>
+                    <span class="text-3xl ml-1 font-medium opacity-50">ms</span>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Real-time decisioning</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/40 transition-all hover:shadow-2xl">
+                <div class="text-4xl lg:text-5xl font-semibold tracking-tighter text-brand-500 flex items-center mb-3">
+                    <span class="counter" data-target="1200">0</span>
+                    <span class="text-3xl ml-1 font-medium opacity-50">+</span>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Participating banks</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/40 transition-all hover:shadow-2xl">
+                <div class="text-4xl lg:text-5xl font-semibold tracking-tighter text-brand-500 flex items-center mb-3">
+                    <span class="counter" data-target="99.999" data-decimals="3">0</span>
+                    <span class="text-3xl ml-1 font-medium opacity-50">%</span>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Platform uptime</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trusted By -->
+    <section id="who" class="py-12 bg-white border-y border-slate-100 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style="background-image: radial-gradient(circle, #0075b7 1px, transparent 1px); background-size: 32px 32px;">
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+    
+                <div class="lg:w-5/12">
+                    <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0075b7] mb-3 block">Strategic
+                        Infrastructure</span>
+                    <h2 class="text-3xl font-semibold text-slate-900 mb-3 italic leading-tight">National Payment Backbone
+                    </h2>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        RS IntelliEdge™ integrates directly at the central switch, securing the national rail through shared
+                        intelligence and real-time interdiction.
+                    </p>
+                </div>
+    
+                <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-16">
+    
+                    <div
+                        class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-[0_20px_50px_rgba(0,117,183,0.1)] border border-slate-100 flex items-center justify-center w-48 h-32 sm:w-64 sm:h-40 transition-all hover:shadow-[0_25px_60px_rgba(0,117,183,0.15)] hover:-translate-y-1">
+                        <img src="./images/npci.png" alt="NPCI" class="h-full w-full object-contain">
+                    </div>
+    
+                    <div class="text-[#0075b7] hidden sm:flex items-center">
+                        <iconify-icon icon="solar:double-alt-arrow-right-bold-duotone"
+                            class="text-4xl animate-[bounce-x_2s_infinite]"></iconify-icon>
+                    </div>
+    
+                    <div class="flex flex-col items-center lg:items-start">
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="text-5xl font-bold text-[#0075b7] tracking-tighter">1,200+</span>
+                            <div class="flex -space-x-2">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-[#0075b7] border-2 border-white flex items-center justify-center shadow-sm">
+                                    <iconify-icon icon="solar:bank-bold" class="text-white text-sm"></iconify-icon>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white shadow-sm"></div>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.15em]">Participating
+                            Members</span>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Developers -->
+    <section id="developers" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#0075b7] mb-4 block">Developers</span>
+                <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 mb-6">Integrate in hours, not months</h2>
+                <p class="text-lg text-slate-500 mb-8">Connect your infrastructure via REST APIs, webhooks, or native SDKs for Java, Python, and Node.js. Built for high-throughput payment rails with developer experience in mind.</p>
+                <a href="#" class="inline-flex items-center text-sm font-medium text-[#0075b7] hover:text-[#005c8f] transition-colors">
+                    View Full Documentation 
+                    <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden text-sm">
+                <div class="flex items-center px-4 py-3 border-b border-slate-100 bg-slate-50/50">
+                    <div class="flex gap-1.5">
+                        <div class="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+                    </div>
+                    <div class="ml-4 flex text-xs font-medium text-slate-500 font-mono">
+                        <span class="text-[#0075b7] mr-2">POST</span> /v1/transactions/score
+                    </div>
+                </div>
+                <div class="p-6 overflow-x-auto">
+<pre class="font-mono text-[13px] leading-relaxed text-slate-700">
+{
+  <span class="text-slate-900">"transaction_id"</span>: <span class="text-emerald-600">"txn_8f3k2"</span>,
+  <span class="text-slate-900">"amount"</span>: <span class="text-[#0075b7]">49500.00</span>,
+  <span class="text-slate-900">"channel"</span>: <span class="text-emerald-600">"UPI"</span>,
+  <span class="text-slate-900">"payer_vpa"</span>: <span class="text-emerald-600">"user@bank"</span>
+}
+
+<span class="text-slate-400">// Response: 200 OK (87ms)</span>
+{
+  <span class="text-slate-900">"risk_score"</span>: <span class="text-[#0075b7]">0.91</span>,
+  <span class="text-slate-900">"decision"</span>: <span class="text-rose-600">"block"</span>,
+  <span class="text-slate-900">"signals"</span>: [<span class="text-emerald-600">"velocity_spike"</span>, <span class="text-emerald-600">"new_device"</span>]
+}
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Proven impact-->
+    <section id="impact" class="py-24 bg-white overflow-hidden border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#0075b7] mb-4 block">Proven Impact</span>
+                <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 mb-8 leading-tight">
+                    Battle-tested on <br/><span class="text-[#0075b7]">Global Payment Rails</span>
+                </h2>
+
+                <div class="relative bg-slate-50 p-8 rounded-2xl border border-slate-200 min-h-[300px] flex flex-col justify-between">
+                    <div id="case-study-content" class="transition-opacity duration-300">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span id="study-tag" class="px-2.5 py-1 bg-[#0075b7]/10 text-[#0075b7] text-[10px] font-bold uppercase rounded tracking-wider">Fraud Defeated</span>
+                        </div>
+                        <h3 id="study-title" class="text-2xl font-semibold text-slate-900 mb-4">RS IntelliEdge™: Real-Time Fraud Defense</h3>
+                        <p id="study-desc" class="text-slate-600 leading-relaxed text-lg">
+                            Stop fraud before it strikes. RS IntelliEdge™ protects 1,200+ banks and 300 million daily transactions, delivering an 80% reduction in fraud. As UPI scales, our AI-driven interdiction and real-time risk assessment ensure your digital ecosystem remains secure, scalable, and one step ahead of evolving threats.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-6 mt-10">
+                        <div class="flex gap-4">
+                            <button onclick="prevSlide()" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center hover:bg-white hover:border-[#0075b7] transition-all group">
+                                <iconify-icon icon="solar:alt-arrow-left-linear" class="text-slate-500 group-hover:text-[#0075b7] text-xl"></iconify-icon>
+                            </button>
+                            <button onclick="nextSlide()" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center hover:bg-white hover:border-[#0075b7] transition-all group">
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-slate-500 group-hover:text-[#0075b7] text-xl"></iconify-icon>
+                            </button>
+                        </div>
+                        <div class="flex gap-2" id="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://youtu.be/QGyT1sNk7sQ" target="_blank" class="relative group block">
+                <div class="absolute -inset-1 bg-gradient-to-r from-[#0075b7] to-cyan-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                
+                <div class="relative rounded-2xl overflow-hidden aspect-video border border-slate-200 shadow-2xl bg-slate-900">
+                    <img src="./images/video_cover.jpg" 
+                         alt="Platform Demo" 
+                         class="object-cover w-full h-full opacity-60 group-hover:scale-105 transition-transform duration-700">
+                    
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                            <iconify-icon icon="solar:play-bold" class="text-white text-3xl ml-1"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-slate-900 to-transparent">
+                        <p class="text-white font-medium text-lg">Watch: The RS IntelliEdge™ Technical Deep Dive</p>
+                        <p class="text-slate-400 text-sm mt-1">Real-time architecture & GenAI analyst workflow (4:12)</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Who We Serve -->
+   <section id="who" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#0075b7] mb-4 block">Ecosystem Reach</span>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">Tailored Intelligence for Global Leaders</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+
+            <div class="group bg-[#f8fafc] rounded-3xl border border-slate-200 p-10 flex flex-col justify-between overflow-hidden relative transition-all hover:border-[#0075b7]/30 hover:shadow-xl">
+                <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-12">
+                    <iconify-icon icon="solar:globus-bold-duotone" class="text-9xl text-[#0075b7]"></iconify-icon>
+                </div>
+
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-[#0075b7] text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
+                        <iconify-icon icon="solar:globus-bold-duotone" class="text-cyan-500"></iconify-icon>
+                        Central Infrastructure
+                    </div>
+                    <p class="text-slate-500 text-sm mb-12 max-w-xs">Securing national-level payment rails and central switches at the sovereign layer.</p>
+
+                    <div id="central-slider-content" class="min-h-[130px] transition-all duration-300">
+                        <h4 id="central-title" class="text-2xl font-semibold text-slate-900 mb-3 italic">Real-Time Central Interdiction</h4>
+                        <p id="central-desc" class="text-slate-600 leading-relaxed text-lg">Centralized fraud monitoring at the switch level to protect the entire national network from systemic risk.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between mt-12 pt-8 border-t border-slate-200">
+                    <div class="flex gap-2.5" id="central-dots"></div>
+                    <div class="flex gap-4">
+                        <button onclick="moveSlider('central', -1)" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:border-[#0075b7] hover:text-[#0075b7] transition-all shadow-sm">
+                            <iconify-icon icon="solar:alt-arrow-left-linear" class="text-xl"></iconify-icon>
+                        </button>
+                        <button onclick="moveSlider('central', 1)" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:border-[#0075b7] hover:text-[#0075b7] transition-all shadow-sm">
+                            <iconify-icon icon="solar:alt-arrow-right-linear" class="text-xl"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group bg-[#eff6ff] rounded-3xl border border-blue-100 p-10 flex flex-col justify-between overflow-hidden relative transition-all hover:border-[#0075b7]/40 hover:shadow-xl">
+                <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12">
+                    <iconify-icon icon="solar:shield-user-bold-duotone" class="text-9xl text-[#0075b7]"></iconify-icon>
+                </div>
+
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-blue-200 text-[#0075b7] text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
+                        <iconify-icon icon="solar:shield-user-bold-duotone" class="text-cyan-500"></iconify-icon>
+                        Banks & PSPs
+                    </div>
+                    <p class="text-slate-500 text-sm mb-12 max-w-xs">Empowering commercial institutions and fintechs with enterprise-grade modular defense.</p>
+
+                    <div id="bank-slider-content" class="min-h-[130px] transition-all duration-300">
+                        <h4 id="bank-title" class="text-2xl font-semibold text-slate-900 mb-3 italic">Omni-Channel Protection</h4>
+                        <p id="bank-desc" class="text-slate-600 leading-relaxed text-lg">Unified fraud visibility across mobile, web, and branch transactions in a single, high-fidelity view.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between mt-12 pt-8 border-t border-blue-200">
+                    <div class="flex gap-2.5" id="bank-dots"></div>
+                    <div class="flex gap-4">
+                        <button onclick="moveSlider('bank', -1)" class="w-12 h-12 rounded-full bg-white border border-blue-200 flex items-center justify-center hover:border-[#0075b7] hover:text-[#0075b7] transition-all shadow-sm">
+                            <iconify-icon icon="solar:alt-arrow-left-linear" class="text-xl"></iconify-icon>
+                        </button>
+                        <button onclick="moveSlider('bank', 1)" class="w-12 h-12 rounded-full bg-white border border-blue-200 flex items-center justify-center hover:border-[#0075b7] hover:text-[#0075b7] transition-all shadow-sm">
+                            <iconify-icon icon="solar:alt-arrow-right-linear" class="text-xl"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Components -->
+    <section id="components" class="py-20 bg-[#002e5d] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+    
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2 block">The Ecosystem
+                        Stack</span>
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-3">RS IntelliEdge™ Components
+                    </h2>
+                    <p class="text-blue-100/70 text-base leading-relaxed">A modular, API-first architecture designed for
+                        national-scale interdiction.</p>
+                </div>
+    
+                <div class="flex items-center gap-4 bg-white/5 p-2 rounded-2xl border border-white/10 backdrop-blur-md">
+                    <div class="flex gap-1.5">
+                        <button onclick="moveMain(-1)"
+                            class="w-9 h-9 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-white transition-all text-white">
+                            <iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon>
+                        </button>
+                        <button onclick="moveMain(1)"
+                            class="w-9 h-9 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-white transition-all text-white">
+                            <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                        </button>
+                    </div>
+                    <div class="h-4 w-[1px] bg-white/20 mx-1"></div>
+                    <div class="text-[11px] font-bold text-blue-200 uppercase pr-2">
+                        <span id="current-index" class="text-cyan-400">1</span> / 8
+                    </div>
+                </div>
+            </div>
+    
+            <div class="relative">
+                <div id="main-card"
+                    class="bg-white/5 rounded-[2.5rem] border border-white/10 p-6 md:p-12 transition-all duration-500 flex flex-col lg:flex-row gap-10 items-stretch backdrop-blur-sm shadow-2xl">
+    
+                    <div class="lg:w-5/12 flex flex-col justify-center">
+                        <div
+                            class="w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/30">
+                            <iconify-icon id="main-icon" icon="solar:cpu-bolt-bold-duotone"
+                                class="text-3xl text-cyan-400"></iconify-icon>
+                        </div>
+                        <h3 id="main-title" class="text-3xl font-semibold text-white mb-4">Adaptive AI Engine</h3>
+                        <p id="main-desc" class="text-blue-100/80 text-lg leading-relaxed">
+                            Our core decisioning layer uses proprietary neural networks to evaluate transaction risk in
+                            under 100 milliseconds.
+                        </p>
+                    </div>
+    
+                    <div
+                        class="lg:w-7/12 w-full bg-[#001e3d] rounded-3xl border border-white/5 p-8 shadow-inner flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/5 rounded-full blur-3xl"></div>
+    
+                        <div class="relative z-10">
+                            <div class="mb-6 pb-4 border-b border-white/5 flex justify-between items-center">
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-cyan-400">Key
+                                    Capabilities</span>
+                                <div class="flex gap-2">
+                                    <button onclick="moveFeature(-1)"
+                                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-cyan-500 text-white transition-all text-sm border border-white/10">
+                                        <iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon>
+                                    </button>
+                                    <button onclick="moveFeature(1)"
+                                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-cyan-500 text-white transition-all text-sm border border-white/10">
+                                        <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div id="feature-content" class="min-h-[100px] transition-all duration-300">
+                                <h4 id="feature-title" class="text-xl font-semibold text-white mb-2">Real-Time Scoring</h4>
+                                <p id="feature-desc" class="text-blue-200/70 text-sm leading-relaxed italic">Scores every
+                                    transaction against historical profiles for instant interdiction.</p>
+                            </div>
+                        </div>
+    
+                        <div class="mt-8 flex gap-2 relative z-10" id="feature-dots"></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Insights -->
+    <section id="insights" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 block">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-[#0075b7] mb-4 block">Insights</span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Stay ahead of the threat landscape</h2>
+                </div>
+                <a href="#" class="hidden md:inline-flex text-sm font-medium text-slate-600 hover:text-slate-900">View all articles</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Insight 1 -->
+                <a href="#" class="group block">
+                    <div class="relative h-48 mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+                        <span class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-semibold text-slate-900 shadow-sm border border-slate-200/50">Case Study</span>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" alt="Cyber Security">
+                    </div>
+                    <h4 class="text-lg font-semibold tracking-tight text-slate-900 mb-2 group-hover:text-[#0075b7] transition-colors">GenAI in Fraud Ops: Analyst Copilots</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">How RAG models are reducing false positives and alert fatigue by 30% across tier-1 banks.</p>
+                </a>
+                
+                <!-- Insight 2 -->
+                <a href="#" class="group block">
+                    <div class="relative h-48 mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+                        <span class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-semibold text-slate-900 shadow-sm border border-slate-200/50">White Paper</span>
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" alt="Data Network">
+                    </div>
+                    <h4 class="text-lg font-semibold tracking-tight text-slate-900 mb-2 group-hover:text-[#0075b7] transition-colors">Frictionless Security in Modern Rails</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Balancing sub-100ms security decisioning with superior end-user payment experience.</p>
+                </a>
+                
+                <!-- Insight 3 -->
+                <a href="#" class="group block">
+                    <div class="relative h-48 mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+                        <span class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-semibold text-slate-900 shadow-sm border border-slate-200/50">Report</span>
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" alt="Analytics">
+                    </div>
+                    <h4 class="text-lg font-semibold tracking-tight text-slate-900 mb-2 group-hover:text-[#0075b7] transition-colors">The Rise of Account Takeover (ATO)</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Shared intelligence strategies to defend against increasingly sophisticated cross-channel threats.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Footer -->
+    <footer class="bg-slate-900 pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold tracking-tight text-white mb-4">Future-proof your fraud defenses</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto text-lg">Join 1,200+ institutions on India's largest shared fraud intelligence network. Start protecting your rails today.</p>
+            <a href="#" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-medium text-slate-900 shadow-sm hover:bg-slate-100 transition-colors mb-20">
+                Contact Sales
+            </a>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 text-sm text-slate-500">
+                <p>© 2026 RS Software. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Security</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 100;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const decimals = +counter.getAttribute('data-decimals') || 0;
+                let count = 0;
+                const increment = target / speed;
+
+                const update = () => {
+                    count += increment;
+                    if (count < target) {
+                        counter.innerText = count.toLocaleString(undefined, {
+                            minimumFractionDigits: decimals,
+                            maximumFractionDigits: decimals
+                        });
+                        requestAnimationFrame(update);
+                    } else {
+                        counter.innerText = target.toLocaleString(undefined, {
+                            minimumFractionDigits: decimals,
+                            maximumFractionDigits: decimals
+                        });
+                    }
+                };
+                update();
+            });
+        };
+
+        tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: {
+                                500: '#0075b7',
+                                600: '#005a8c',
+                            }
+                        },
+                        // Add this section below
+                        animation: {
+                            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        },
+                        keyframes: {
+                            fadeInUp: {
+                                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                                '100%': { opacity: '1', transform: 'translateY(0)' },
+                            }
+                        }
+                    }
+                }
+            }
+
+            const studies = [
+        {
+            tag: "Fraud Defeated",
+            title: "RS IntelliEdge™: Real-Time Fraud Defense",
+            desc: "Stop fraud before it strikes. RS IntelliEdge™ protects 1,200+ banks and 300 million daily transactions, delivering an 80% reduction in fraud. As UPI scales, our AI-driven interdiction and real-time risk assessment ensure your digital ecosystem remains secure, scalable, and one step ahead of evolving threats."
+        },
+        {
+            tag: "Fraud Defeated",
+            title: "RS IntelliEdge™: Real-Time Fraud Defense",
+            desc: "Stop fraud before it strikes. RS IntelliEdge™ protects 1,200+ banks and 300 million daily transactions, delivering an 80% reduction in fraud. As UPI scales, our AI-driven interdiction and real-time risk assessment ensure your digital ecosystem remains secure, scalable, and one step ahead of evolving threats."
+        },
+        {
+            tag: "Fraud Defeated",
+            title: "RS IntelliEdge™: Real-Time Fraud Defense",
+            desc: "Stop fraud before it strikes. RS IntelliEdge™ protects 1,200+ banks and 300 million daily transactions, delivering an 80% reduction in fraud. As UPI scales, our AI-driven interdiction and real-time risk assessment ensure your digital ecosystem remains secure, scalable, and one step ahead of evolving threats."
+        }
+    ];
+
+    let currentSlide = 0;
+
+    function updateSlider() {
+        const content = document.getElementById('case-study-content');
+        const tag = document.getElementById('study-tag');
+        const title = document.getElementById('study-title');
+        const desc = document.getElementById('study-desc');
+        const study = studies[currentSlide];
+        
+        content.style.opacity = '0';
+        
+        setTimeout(() => {
+            tag.innerText = study.tag;
+            title.innerText = study.title;
+            desc.innerText = study.desc;
+            content.style.opacity = '1';
+            renderDots();
+        }, 300);
+    }
+
+    function renderDots() {
+        const dotsContainer = document.getElementById('slider-dots');
+        dotsContainer.innerHTML = studies.map((_, i) => `
+            <div class="w-2 h-2 rounded-full transition-all duration-300 ${i === currentSlide ? 'bg-[#0075b7] w-6' : 'bg-slate-300'}"></div>
+        `).join('');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % studies.length;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + studies.length) % studies.length;
+        updateSlider();
+    }
+
+    function openVideo() {
+        alert("Trigger video modal or redirect to URL here.");
+    }
+
+    const serveData = {
+        central: [
+            { title: "Real-Time Central Interdiction", desc: "Centralized fraud monitoring at the switch level to protect the entire national network from systemic risk." },
+            { title: "Ecosystem-Wide Intelligence", desc: "Aggregate threat data from all participants to identify coordinated fraud patterns before they scale." },
+            { title: "Regulatory Compliance", desc: "Automated AML and KYC reporting tailored to national and international compliance standards." }
+        ],
+        bank: [
+            { title: "Omni-Channel Protection", desc: "Unified fraud visibility across mobile, web, and branch transactions in a single, high-fidelity view." },
+            { title: "Reduced False Positives", desc: "Advanced AI profiling that distinguishes between legitimate user behavior and fraudulent anomalies." },
+            { title: "Seamless Integration", desc: "API-first architecture that plugs into core banking systems with zero downtime or disruption." }
+        ]
+    };
+
+    let indices = { central: 0, bank: 0 };
+
+    function moveSlider(type, direction) {
+        const list = serveData[type];
+        indices[type] = (indices[type] + direction + list.length) % list.length;
+        
+        const content = document.getElementById(`${type}-slider-content`);
+        const titleEl = document.getElementById(`${type}-title`);
+        const descEl = document.getElementById(`${type}-desc`);
+        
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(8px)';
+        
+        setTimeout(() => {
+            titleEl.innerText = list[indices[type]].title;
+            descEl.innerText = list[indices[type]].desc;
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+            renderServeDots(type);
+        }, 200);
+    }
+
+    function renderServeDots(type) {
+        const dotsContainer = document.getElementById(`${type}-dots`);
+        dotsContainer.innerHTML = serveData[type].map((_, i) => `
+            <div class="w-2 h-2 rounded-full transition-all duration-300 ${i === indices[type] ? 'bg-[#0075b7] w-6' : 'bg-slate-300'}"></div>
+        `).join('');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        renderServeDots('central');
+        renderServeDots('bank');
+    });
+
+    const components = [
+        {
+            title: "Adaptive AI Engine",
+            icon: "solar:cpu-bolt-bold-duotone",
+            desc: "Our core decisioning layer uses proprietary neural networks to evaluate transaction risk in under 100 milliseconds.",
+            features: [
+                { title: "Real-Time Scoring", desc: "Scores every transaction against historical profiles for instant interdiction." },
+                { title: "Model Drift Alerts", desc: "Monitors performance to ensure accuracy remains at peak levels over time." },
+                { title: "Self-Learning Loops", desc: "Updates risk weights automatically based on confirmed fraud feedback." },
+                { title: "Behavioral Analysis", desc: "Identifies anomalies in user behavior that signal account takeover." },
+                { title: "Bot Mitigation", desc: "Detects automated scripts and prevents high-frequency attack patterns." }
+            ]
+        },
+
+        {
+            title: "GenAI Co-Pilot",
+            icon: "solar:magic-stick-3-bold-duotone",
+            desc: "A natural language interface that empowers analysts to investigate complex fraud rings using intuitive conversational commands.",
+            features: [
+                { title: "Natural Language Query", desc: "Ask 'Show me alerts from last night' instead of writing complex SQL." },
+                { title: "Similarity Search", desc: "Instantly finds transactions with similar signatures across the network." },
+                { title: "Automated Summaries", desc: "Generates concise case notes for regulatory filings and internal audits." },
+                { title: "Pattern Discovery", desc: "Identifies emerging fraud trends that traditional rules might miss." },
+                { title: "Analyst Training", desc: "Suggests next steps based on top-performing investigator workflows." }
+            ]
+        },
+        // Add remaining 6 components here following the same structure...
+        {
+            title: "Network Intelligence",
+            icon: "solar:globus-bold-duotone",
+            desc: "Leverages shared intelligence from 1,200+ institutions to detect systemic threats before they reach your institution.",
+            features: [
+                { title: "Consolidated Blacklists", desc: "Access a live database of confirmed fraudulent entities." },
+                { title: "Cross-Bank Insights", desc: "Detects mule accounts moving money across different banking rails." },
+                { title: "Geo-Fencing Intel", desc: "Real-time updates on high-risk geographic transaction nodes." },
+                { title: "Mule Account Detection", desc: "Identifies interconnected accounts used for money laundering." },
+                { title: "Switch-Level Protection", desc: "Protects the national switch from coordinated cyber-attacks." }
+            ]
+        }
+    ];
+
+    let currentMain = 0;
+    let currentFeat = 0;
+    let autoplayTimer = null;
+
+    function updateDisplay() {
+        const comp = components[currentMain];
+        const feat = comp.features[currentFeat];
+
+        // Update Main Card
+        document.getElementById('main-title').innerText = comp.title;
+        document.getElementById('main-desc').innerText = comp.desc;
+        document.getElementById('main-icon').setAttribute('icon', comp.icon);
+        document.getElementById('current-index').innerText = currentMain + 1;
+
+        // Update Inner Feature
+        const featBox = document.getElementById('feature-content');
+        featBox.style.opacity = '0';
+        featBox.style.transform = 'translateY(5px)';
+
+        setTimeout(() => {
+            document.getElementById('feature-title').innerText = feat.title;
+            document.getElementById('feature-desc').innerText = feat.desc;
+            featBox.style.opacity = '1';
+            featBox.style.transform = 'translateY(0)';
+            renderDots();
+        }, 200);
+    }
+
+    function moveMain(dir) {
+        currentMain = (currentMain + dir + components.length) % components.length;
+        currentFeat = 0; // Reset feature to first when changing main
+        updateDisplay();
+    }
+
+    function moveFeature(dir) {
+        const featCount = components[currentMain].features.length;
+        currentFeat = (currentFeat + dir + featCount) % featCount;
+        updateDisplay();
+    }
+
+    function renderDots() {
+        const dots = document.getElementById('feature-dots');
+        dots.innerHTML = components[currentMain].features.map((_, i) => `
+            <div class="w-2 h-2 rounded-full transition-all duration-300 ${i === currentFeat ? 'bg-cyan-400 w-8' : 'bg-white/10'}"></div>
+        `).join('');
+    }
+
+    function startAutoplay() {
+        stopAutoplay(); // Clear any existing timer
+        autoplayTimer = setInterval(() => {
+            moveFeature(1); // Advance one feature
+        }, 2000); // 5 Seconds interval
+    }
+
+    function stopAutoplay() {
+        if (autoplayTimer) clearInterval(autoplayTimer);
+    }
+function updateDisplay() {
+        const comp = components[currentMain];
+        const feat = comp.features[currentFeat];
+
+        // Update Main Card
+        document.getElementById('main-title').innerText = comp.title;
+        document.getElementById('main-desc').innerText = comp.desc;
+        document.getElementById('main-icon').setAttribute('icon', comp.icon);
+        document.getElementById('current-index').innerText = currentMain + 1;
+
+        // Update Inner Feature with transition
+        const featBox = document.getElementById('feature-content');
+        featBox.style.opacity = '0';
+        featBox.style.transform = 'translateY(5px)';
+
+        setTimeout(() => {
+            document.getElementById('feature-title').innerText = feat.title;
+            document.getElementById('feature-desc').innerText = feat.desc;
+            featBox.style.opacity = '1';
+            featBox.style.transform = 'translateY(0)';
+            renderDots();
+        }, 200);
+    }
+
+    function moveMain(dir) {
+        currentMain = (currentMain + dir + components.length) % components.length;
+        currentFeat = 0; 
+        updateDisplay();
+        startAutoplay(); // Restart timer when main category changes
+    }
+
+    function moveFeature(dir) {
+        const featCount = components[currentMain].features.length;
+        currentFeat = (currentFeat + dir + featCount) % featCount;
+        updateDisplay();
+    }
+
+    function renderDots() {
+        const dots = document.getElementById('feature-dots');
+        dots.innerHTML = components[currentMain].features.map((_, i) => `
+            <div class="w-2 h-2 rounded-full transition-all duration-300 ${i === currentFeat ? 'bg-cyan-400 w-8' : 'bg-white/10'}"></div>
+        `).join('');
+    }
+
+    // --- Event Listeners for Hover (UX) ---
+    window.addEventListener('DOMContentLoaded', () => {
+        updateDisplay();
+        startAutoplay();
+
+        const featureCard = document.querySelector('#main-card > div:last-child');
+        
+        // Pause on hover so the user can read the text
+        featureCard.addEventListener('mouseenter', stopAutoplay);
+        featureCard.addEventListener('mouseleave', startAutoplay);
+    });
+
+
+
+    
+
+    window.addEventListener('DOMContentLoaded', updateDisplay);
+
+
+    
+    window.addEventListener('DOMContentLoaded', renderDots);
+
+
+        
+
+        window.addEventListener('DOMContentLoaded', animateCounters);
+    </script>
+
+</body>
+</html>

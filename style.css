@@ -1,0 +1,74 @@
+        /* Ensuring stroke width for Solar icons */
+        iconify-icon {
+            --svg-stroke-width: 1.5px;
+        }
+
+
+        /* Add this rule here */
+        html {
+        scroll-behavior: smooth;
+        }
+
+       
+        iconify-icon {
+        --svg-stroke-width: 1.5px;
+        }
+
+        @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+        }
+
+        .logo-marquee-wrapper {
+        display: flex;
+        width: max-content; /* This ensures all logos stay on one line */
+        animation: scroll 30s linear infinite;
+         }
+
+        /* This stops the jump when you hover */
+         .logo-marquee-wrapper:hover {
+        animation-play-state: paused;
+         }
+
+        .logo-item {
+        flex-shrink: 0;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: all 0.3s ease;
+         }
+
+        .logo-item:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        }
+
+    /* This makes the logos fade in/out at the edges of your layout */
+    .logo-viewport {
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    }
+
+    
+        .animate-infinite-scroll {
+        display: flex;
+        width: max-content; /* Critical for keeping logos in one line */
+        animation: infiniteScroll 20s linear infinite;
+        }
+
+        .animate-infinite-scroll:hover {
+        animation-play-state: paused;
+        }
+
+        /* Soft edge fade so logos don't pop in/out */
+        .logo-viewport {
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        @keyframes bounce-x {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(10px); }
+    }
+    .animate-\[bounce-x_2s_infinite\] {
+        animation: bounce-x 2s ease-in-out infinite;
+    }
